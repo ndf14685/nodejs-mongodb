@@ -1,0 +1,46 @@
+})(window)
+
+NPM package
+npm {i|install} {-g |global | -s|--save | -D|--s}
+NODEMON = Es simil node pero con recarga automatica
+
+
+
+
+let nombre= Horacio
+let saludo ="" + nombre
+
+let saludo = `Hola soy {nombre} `
+
+npm
+
+----------------------------------------------------------------
+
+let obj = {x:2,y:1,z:2}
+
+let x = obj.x
+let y = obj.y
+let z = obj.z
+
+
+Destructuring
+
+let {x:x,y:y,z:z} = obj
+
+
+Shothand
+let {x,y,z} = obj
+
+
+
+
+-----------------------------------------------------------------
+Tuto: 
+
+Fetch 
+https://javascript.info/fetch-crossorigin
+
+
+
+
+Modulo de eventos(sincronia) stream (completa un buffer) buffer(lugar donde se almacena los chain de stream) y net (abre puertos de TCP), Errors, Console

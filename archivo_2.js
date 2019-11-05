@@ -7,4 +7,5 @@ var b = 2
 
 //CommonJS
 
-module.exports.resultado = a + b;
+module.exports.resultado = a + b; //Export default 
+
