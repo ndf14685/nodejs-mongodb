@@ -1,0 +1,34 @@
+horacio.estevez@gmail.com
+
+Express HTTP
+
+npm i -g nodemon
+npm i -S express 
+
+npm init -y b
+nodemon servidor.js
+
+
+javascript orientado a objetos bajo paradigma de prototipos
+
+
+Condiconales: 
+True o {FALSE|undefined|null|""}
+
+
+Fetch API = Promise + XHR (Ajax) 
+(Es del web browser)
+fetch(
+    "http:localhost:8000/usuarios",{
+        method : "POST",
+        body : JSON.stringify({nombre: "Horacio"}),  ///LOS BODY NUNCA PUEDEN SALIR COMO OBJETOS, se tiene que stringificar
+        headers : {
+            "content-type" : "application/json"
+        }
+    }
+)
+
+
+JSON-SERVER 
+
+> npm i -g json-server
