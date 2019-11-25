@@ -43,4 +43,4 @@ https://javascript.info/fetch-crossorigin
 
 
 
-Modulo de eventos(sincronia) stream (completa un buffer) buffer(lugar donde se almacena los chain de stream) y net (abre puertos de TCP), Errors, Console
+Modulo de eventos(sincronia) stream (completa un buffer) buffer(lugar donde se almacena los chain de stream) y net (abre puertos de TCP), Errors, Consolek

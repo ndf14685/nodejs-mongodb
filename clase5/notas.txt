@@ -1,0 +1,2 @@
+Al ser fullstack manejas muchas tecnologias, con lo cual esto hace que no sepamos a full o de memoria las validaciones o propiedades. 
+RECOMENDACION: Ir siempre a la documentacion!! 
