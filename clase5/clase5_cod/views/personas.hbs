@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Apellidos</th>
+            <th>Nombres</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each personasData}}
+            <tr>
+                <td><a href="/ver?id={{_id}}">Ver</a></td>
+                <td>{{ Apellido }}</td>
+                <td>{{ Nombre }}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

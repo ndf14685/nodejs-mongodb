@@ -1,0 +1,12 @@
+Editar Persona:<br>
+<form method="POST" autocomplete="off">
+    <input type="hidden" name="id" value="{{persona._id}}">
+    Nombre:<br />
+    <input type="text" name="nombre" value="{{ persona.Nombre }}" /><br />
+    Apellido: <br />
+    <input type="text" name="apellido" value="{{ persona.Apellido }}" /><br />
+    Edad: <br />
+    <input type="text" name="edad"  value="{{ persona.Edad }}" /><br />
+    <input type="submit" />
+    <input type="reset" />
+</form>
