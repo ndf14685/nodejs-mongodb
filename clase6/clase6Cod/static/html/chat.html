@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <title>Chat</title>
+</head>
+<body>
+    <h1>Chat</h1>
+    <ul id="mensajes"></ul>
+    <form>
+        <input type="text" id="m" name="m" autocomplete="off" /><br>
+        <input type="submit" value="Enviar mensaje" />
+    </form>
+    <script>
+        var socket = new io();
+
+        $("form").submit(function(){
+            var mensaje = $("#m").val();
+            $("#m").val("");
+            socket.emit("chat message", mensaje);
+            return false;
+        });
+    </script>
+</body>
+</html>
