@@ -7,8 +7,9 @@ const initialize = (server) => {
 
     io.on("connection",(socketCliente) => {
         console.log("Se conecto un cliente");
+        console.log(socketCliente);
         socketCliente.on("chat message",(msg) => {
-            console.log(msg);
+            io.emit("chat message",msg);
         })
     });
 }

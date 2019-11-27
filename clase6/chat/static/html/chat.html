@@ -10,20 +10,30 @@
 </head>
 <body>
     <h1>Chat</h1>
-    <ul id="mensajes"></ul>
+    
     <form>
+        <input type="text" id="n" name="n" autocomplete="off" /><br>
         <input type="text" id="m" name="m" autocomplete="off" /><br>
         <input type="submit" value="Enviar mensaje" />
     </form>
+    <ul id="mensajes"></ul>
     <script>
         var socket = new io();
 
         $("form").submit(function(){
             var mensaje = $("#m").val();
             $("#m").val("");
-            socket.emit("chat message", mensaje);
+            socket.emit("chat message", {
+                nombre: $("#n").val(),
+                mensaje: mensaje
+            });
             return false;
         });
+        socket.on("chat message", function(msg){
+            console.log(msg);
+            $("#mensajes").append($("<li>").text(msg.nombre + ": "+msg.mensaje));
+        });
+
     </script>
 </body>
 </html>
