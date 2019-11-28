@@ -1,0 +1,13 @@
+h1{
+    margin-top: 10px;
+}
+
+
+.juego-container{
+    display: flex;
+    cursor: pointer;
+}
+
+.juego-imagen-seleccionada{
+    border: 1px solid blue;
+}

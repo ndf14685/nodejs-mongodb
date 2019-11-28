@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Piedra papel o tijera</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css"/>
+    <link rel="stylesheet" href="css/site.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="js/juego.js"></script>
+</head>
+
+<body>
+    <h1>Piedra Papel o Tijera</h1>
+    <h3>Selecciona tu juego</h3>
+    <label for="name">Nombre de jugador: </label>
+    <input type="text" id="jugador" value="jugador" readonly></input><br>
+    <label for="oponente">Oponente</label>
+    <select id="selectOponente">
+    </select>
+    <div class="juego-container">
+        <div>
+            <img id="piedra" src="img/piedra.jpg" />
+        </div>
+        <div>
+            <img id="papel" src="img/papel.jpg" />
+        </div>
+        <div>
+            <img id="tijera" src="img/tijera.jpg" />
+        </div>
+    </div>
+    <h3>El juego de tu oponente</h3>
+    <img id="oponente" src="img/sin-seleccion.jpg">
+</body>
+
+</html>
